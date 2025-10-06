@@ -11,19 +11,26 @@ inputs=(
 "Balanced BAL_3 400 14 636"
 )
 
+echo "mkdir InputFiles"
 
+INPUT_DIR="InputFiles"
+mkdir -p "$INPUT_DIR"
 for line in "${inputs[@]}"; do
     read -r category filename cpuburst devnum devdelay <<< "$line"
-    outfile="${filename}.txt"
+    outfile="${INPUT_DIR}/${filename}.txt"
     
-    echo "# Input File: $filename ($category)" > "$outfile"
+    if [ -f "$outfile" ]; then
+        rm "$outfile"
+    fi
+
+    > "$outfile"
     
     for i in {1..5}; do
         echo "CPU, $cpuburst" >> "$outfile"
-        echo "SYSCALL, $i" >> "$outfile"
-        # Optional: a second CPU burst to vary workload
+        echo "SYSCALL, $devnum" >> "$outfile"
+       
         echo "CPU, $cpuburst" >> "$outfile"
-        echo "IO_END, $devnum" >> "$outfile"
+        echo "END_IO, $devnum" >> "$outfile"
     done
     
     echo "Generated $outfile"

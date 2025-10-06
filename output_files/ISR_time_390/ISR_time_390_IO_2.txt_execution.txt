@@ -1,0 +1,75 @@
+0, 100, CPU burst
+100, 1, switch to kernel mode
+101, 10, context saved
+111, 1, find vector 2 in memory position 0x0004
+112, 1, load address 0X0695 into the PC
+113, 390, SYSCALL: Run ISR (call device driver)
+503, 390, Transferring Data into Memory
+893, 1, IRET (restore context and mode bit = user) Delayed: device ready at 263
+894, 100, CPU burst
+994, 1, switch to kernel mode
+995, 10, context saved
+1005, 1, find vector 2 in memory position 0x0004
+1006, 1, load address 0X0695 into the PC
+1007, 390, END_IO: Run ISR (device driver)
+1397, 1, IRET (Delayed: device ready at1157
+1398, 100, CPU burst
+1498, 1, switch to kernel mode
+1499, 10, context saved
+1509, 1, find vector 2 in memory position 0x0004
+1510, 1, load address 0X0695 into the PC
+1511, 390, SYSCALL: Run ISR (call device driver)
+1901, 390, Transferring Data into Memory
+2291, 1, IRET (restore context and mode bit = user) Delayed: device ready at 1661
+2292, 100, CPU burst
+2392, 1, switch to kernel mode
+2393, 10, context saved
+2403, 1, find vector 2 in memory position 0x0004
+2404, 1, load address 0X0695 into the PC
+2405, 390, END_IO: Run ISR (device driver)
+2795, 1, IRET (Delayed: device ready at2555
+2796, 100, CPU burst
+2896, 1, switch to kernel mode
+2897, 10, context saved
+2907, 1, find vector 2 in memory position 0x0004
+2908, 1, load address 0X0695 into the PC
+2909, 390, SYSCALL: Run ISR (call device driver)
+3299, 390, Transferring Data into Memory
+3689, 1, IRET (restore context and mode bit = user) Delayed: device ready at 3059
+3690, 100, CPU burst
+3790, 1, switch to kernel mode
+3791, 10, context saved
+3801, 1, find vector 2 in memory position 0x0004
+3802, 1, load address 0X0695 into the PC
+3803, 390, END_IO: Run ISR (device driver)
+4193, 1, IRET (Delayed: device ready at3953
+4194, 100, CPU burst
+4294, 1, switch to kernel mode
+4295, 10, context saved
+4305, 1, find vector 2 in memory position 0x0004
+4306, 1, load address 0X0695 into the PC
+4307, 390, SYSCALL: Run ISR (call device driver)
+4697, 390, Transferring Data into Memory
+5087, 1, IRET (restore context and mode bit = user) Delayed: device ready at 4457
+5088, 100, CPU burst
+5188, 1, switch to kernel mode
+5189, 10, context saved
+5199, 1, find vector 2 in memory position 0x0004
+5200, 1, load address 0X0695 into the PC
+5201, 390, END_IO: Run ISR (device driver)
+5591, 1, IRET (Delayed: device ready at5351
+5592, 100, CPU burst
+5692, 1, switch to kernel mode
+5693, 10, context saved
+5703, 1, find vector 2 in memory position 0x0004
+5704, 1, load address 0X0695 into the PC
+5705, 390, SYSCALL: Run ISR (call device driver)
+6095, 390, Transferring Data into Memory
+6485, 1, IRET (restore context and mode bit = user) Delayed: device ready at 5855
+6486, 100, CPU burst
+6586, 1, switch to kernel mode
+6587, 10, context saved
+6597, 1, find vector 2 in memory position 0x0004
+6598, 1, load address 0X0695 into the PC
+6599, 390, END_IO: Run ISR (device driver)
+6989, 1, IRET (Delayed: device ready at6749

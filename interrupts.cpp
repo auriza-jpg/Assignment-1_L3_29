@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
     /******************ADD YOUR VARIABLES HERE*************************/
     int negligible_time = 1; //1ms
     int context_save_time = 10; 
-    int ISR_activity_time = 40;
+    int ISR_activity_time = 100;
     int current_time = 0;
     int number_ISR_activites = 2; 
     /******************************************************************/
@@ -99,6 +99,7 @@ int main(int argc, char** argv) {
             if( duration_intr < (int)sizeof(delays) &&  0 <= duration_intr )
             {
                 opr_time = delays[duration_intr];
+                std::cout<<opr_time<<std::endl;
             }
             if(opr_time > 0)
             {
