@@ -99,6 +99,7 @@ int main(int argc, char** argv) {
             if( duration_intr < (int)sizeof(delays) &&  0 <= duration_intr )
             {
                 opr_time = delays[duration_intr];
+                std::cout<<opr_time<<std::endl;
             }
             if(opr_time > 0)
             {
