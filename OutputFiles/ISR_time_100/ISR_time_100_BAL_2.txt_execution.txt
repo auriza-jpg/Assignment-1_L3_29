@@ -1,0 +1,80 @@
+0, 200, CPU burst
+200, 1, switch to kernel mode
+201, 10, context saved
+211, 1, find vector 12 in memory position 0x0018
+212, 1, load address 0X03B9 into the PC
+213, 100, SYSCALL: Run ISR (call device driver)
+313, 100, Transferring Data into Memory
+413, 1, IRET (restore context and mode bit = user) Delayed: device ready at 358
+414, 200, CPU burst
+614, 1, switch to kernel mode
+615, 10, context saved
+625, 1, find vector 12 in memory position 0x0018
+626, 1, load address 0X03B9 into the PC
+627, 100, END_IO: Run ISR (device driver)
+727, 45, check device status 
+772, 1, IRET
+773, 200, CPU burst
+973, 1, switch to kernel mode
+974, 10, context saved
+984, 1, find vector 12 in memory position 0x0018
+985, 1, load address 0X03B9 into the PC
+986, 100, SYSCALL: Run ISR (call device driver)
+1086, 100, Transferring Data into Memory
+1186, 1, IRET (restore context and mode bit = user) Delayed: device ready at 1131
+1187, 200, CPU burst
+1387, 1, switch to kernel mode
+1388, 10, context saved
+1398, 1, find vector 12 in memory position 0x0018
+1399, 1, load address 0X03B9 into the PC
+1400, 100, END_IO: Run ISR (device driver)
+1500, 45, check device status 
+1545, 1, IRET
+1546, 200, CPU burst
+1746, 1, switch to kernel mode
+1747, 10, context saved
+1757, 1, find vector 12 in memory position 0x0018
+1758, 1, load address 0X03B9 into the PC
+1759, 100, SYSCALL: Run ISR (call device driver)
+1859, 100, Transferring Data into Memory
+1959, 1, IRET (restore context and mode bit = user) Delayed: device ready at 1904
+1960, 200, CPU burst
+2160, 1, switch to kernel mode
+2161, 10, context saved
+2171, 1, find vector 12 in memory position 0x0018
+2172, 1, load address 0X03B9 into the PC
+2173, 100, END_IO: Run ISR (device driver)
+2273, 45, check device status 
+2318, 1, IRET
+2319, 200, CPU burst
+2519, 1, switch to kernel mode
+2520, 10, context saved
+2530, 1, find vector 12 in memory position 0x0018
+2531, 1, load address 0X03B9 into the PC
+2532, 100, SYSCALL: Run ISR (call device driver)
+2632, 100, Transferring Data into Memory
+2732, 1, IRET (restore context and mode bit = user) Delayed: device ready at 2677
+2733, 200, CPU burst
+2933, 1, switch to kernel mode
+2934, 10, context saved
+2944, 1, find vector 12 in memory position 0x0018
+2945, 1, load address 0X03B9 into the PC
+2946, 100, END_IO: Run ISR (device driver)
+3046, 45, check device status 
+3091, 1, IRET
+3092, 200, CPU burst
+3292, 1, switch to kernel mode
+3293, 10, context saved
+3303, 1, find vector 12 in memory position 0x0018
+3304, 1, load address 0X03B9 into the PC
+3305, 100, SYSCALL: Run ISR (call device driver)
+3405, 100, Transferring Data into Memory
+3505, 1, IRET (restore context and mode bit = user) Delayed: device ready at 3450
+3506, 200, CPU burst
+3706, 1, switch to kernel mode
+3707, 10, context saved
+3717, 1, find vector 12 in memory position 0x0018
+3718, 1, load address 0X03B9 into the PC
+3719, 100, END_IO: Run ISR (device driver)
+3819, 45, check device status 
+3864, 1, IRET
