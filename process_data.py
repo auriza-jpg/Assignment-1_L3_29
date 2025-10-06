@@ -7,7 +7,7 @@ SUMMARY_FILE = "test_summary.txt"
 CPU_KEYWORDS = ["CPU burst"]
 
 with open(SUMMARY_FILE, "w") as summary:
-    summary.write("Filename: Total, Ratio (I/O over Total Time) IO, CPU, IO/CPU\n")  
+    summary.write("Filename: Total, Ratio (IO/Duration) IO, CPU, IO/CPU\n")  
 
     for root, dirs, files in os.walk(OUTPUT_DIR):
         for filename in files:
@@ -35,6 +35,6 @@ with open(SUMMARY_FILE, "w") as summary:
                     else:
                         io_time += duration
 
-            summary.write(f"{filepath}: Total={total_time:.0f}, Ratio={io_time/total_time:.3f} IO={io_time:.0f}, CPU={cpu_time:.0f} \n")
+            summary.write(f"{filename}: Total={total_time:.0f}, Ratio {io_time/total_time:.2f}, IO={io_time:.0f}, CPU={cpu_time:.0f}\n")
 
 print(f"Summary written to {SUMMARY_FILE}")
