@@ -20,8 +20,8 @@ int main(int argc, char** argv) {
 
     /******************ADD YOUR VARIABLES HERE*************************/
     int negligible_time = 1; //1ms
-    int context_save_time = 30; 
-    int ISR_activity_time = 40;
+    int context_save_time = 10; 
+    int ISR_activity_time = 50;
     int current_time = 0;
     int number_ISR_activites = 2; 
     /******************************************************************/
